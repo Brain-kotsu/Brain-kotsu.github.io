@@ -31,85 +31,43 @@
 		.tuu{
 			color: #ff0000;
 		}
-		/*メニューバーの装飾*/ul.ddmenu{
-			margin: 83px;
-			padding:0px 0px 0px 15px;
-			background-color: #ff0000;
-		}
-		/*メニューの装飾*/ul.ddmenu li{
-			width:125px;
-			display:inline-block;
-			list-style-type: none;
-			position: relative;
-		}
-		ul.ddmenu a{
-			background-color: #ff0000;
-			color: white;
-			line-height: 40px;
-			text-align: center;
-			text-decoration: none;
-			font-weight: bold;
-			display:block;
-		}
-		ul.ddmenu a:hover{
-			background-color: #ffdddd;
-			color:#dd0000;
-		}
-		ul.ddmenu ul{
-			display:none;
-			margin:0px;
-			padding:0px;
-			position:absolute;
-		}
-		ul.ddmenu li:hover ul{
-			display:block;
-		}
-		ul.ddmenu ul li{
-			width: 135px;
-			border-top: 1px solid pink;
-		}
-		ul.ddmenu ul li a{
-			line-height: 35px;
-			text-align: left;
-			padding-left: 5px;
-			font-weight: normal;
-		}
 	</style>
 </head>
 <body>
 	<div class="Header">
 	<h1>ブレイン交<span class="tuu">通</span></h1>
 </div>
-<ul class="ddmenu">
-	<li><a href="https://brain-kotsu.github.io">HOME</a></li>
-	<li><a href="#">クイズ</a>
-	<ul>
-		<li><a href="#">難読駅名</a></li>
-		<li><a href="#">その他クイズ</a></li>
-		<li><a href="#">過去のクイズ</a></li>
-	</ul>
-</li>
-<li><a href="#">ニュース</a>
-	<ul>
-		<li><a href="#">過去のニュース</a></li>
-	</ul>
-</li>
-<li><a href="#">鉄道の動画</a></li>
-<li><a href="#">鉄道博物館</a>
-	<ul>
-		<li><a href="#">駅の記憶</a></li>
-		<li><a href="#">車両の記憶</a></li>
-	</ul>
-</li>
-<li><a href="#">その他</a>
-	<ul>
-		<li><a href="#">ログイン</a></li>
-		<li><a href="#">お問い合わせ</a></li>
-		<li><a href="#">ブログ(外部)</a></li>
-		<li><a href="#">ツイッター</a></li>
-		<li><a href="#">Youtube</a></li>
-	</ul>
-</li>
+<ul class="menu">
+    <li class="menu__single">
+        <a href="#" class="init-bottom">ホーム</a></li>
+    <li class="menu__single">
+        <a href="#" class="init-bottom">クイズ</a>
+        <ul class="menu__second-level">
+            <li><a href="#">難読駅名クイズ</a></li>
+            <li><a href="#">その他のクイズ</a></li>
+        </ul>
+    </li>
+    <li class="menu__single">
+        <a href="#" class="init-bottom">ニュース</a></li>
+    <li class="menu__single">
+        <a href="#" class="init-bottom">鉄道の動画</a></li>
+    <li class="menu__single">
+        <a href="#" class="init-bottom">鉄道博物館</a>
+        <ul class="menu__second-level">
+            <li><a href="#">駅の記憶</a></li>
+            <li><a href="#">車両の記憶</a></li>
+        </ul>
+    </li>
+    <li class="menu__single">
+        <a href="#" class="init-bottom">その他</a>
+        <ul class="menu__second-level">
+            <li><a href="#">ログイン</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">管理人のブログ(外部)</a></li>
+            <li><a href="#">ツイッター</a></li>
+        </ul>
+    </li>
+    <!-- 他グローバルナビメニュー省略 -->
 </ul>
 <div class="contents">
 </div>
